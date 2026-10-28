@@ -73,12 +73,10 @@ export default function Hero({ stats, todayDay, onCta }) {
         </div>
 
         <div className="fan__card fan__card--c glass glass--modal tilt">
-          <span className="badge">Día {day}</span>
-          <p className="fan__q">¿Qué servicio de AWS ejecuta código sin administrar servidores?</p>
-          <div className="fan__opt fan__opt--on">Lambda</div>
-          <div className="fan__opt">Lightsail</div>
-          <div className="fan__opt">Snowball</div>
-        </div>
+  <span className="badge">Día {day} de {TOTAL_DAYS}</span>
+  <p className="fan__title">Una pregunta nueva cada día</p>
+  <p className="fan__cap">Se abre a la medianoche y solo puedes responderla una vez.</p>
+</div>
 
         <div className="fan__card fan__card--r glass glass--modal tilt">
           <Ring value={stats.answered} total={TOTAL_DAYS} />
